@@ -158,10 +158,7 @@ class File:
 
 def main():
     while True:
-        file_path = (
-            input("Enter file location")
-            or "C:/Users/Matth/OneDrive/UoL/Second Year/PracticalWork/209/Computational Jobs/Log Files/FeAcac3hs.log"
-        )
+        file_path = input("Enter file location")
         try:
             file = read_file(file_path)
         except FileNotFoundError:
